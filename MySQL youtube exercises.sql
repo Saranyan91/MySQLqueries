@@ -1,7 +1,7 @@
 USE sql_invoicing;
 
 SELECT 
-    p.*, c.name AS 'Client Name', pm.name AS 'Payment method'
+    p.date, p.invoice_id,p.amount, c.name AS 'Client Name', pm.name AS 'Payment method'
 FROM
     payments p
         JOIN
